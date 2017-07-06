@@ -1,6 +1,6 @@
 {
   "name": "@getstation/repackage-chrome-extension-for-electron",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Repackage a Chrome extension to be loaded via `addDevToolsExtension`",
   "main": "index.js",
   "bin": {
