@@ -41,7 +41,7 @@ const reworkContentScripts = targetDirectory => {
 
     // 3 - we work around a bug in the `content_scripts.matches`
     // interpretation of Electon
-    if(content_scripts.matches) {
+    if(content_scripts.matches && content_scripts.matches[0] !== '<all_urls>') {
       content_scripts.matches = [ '('+content_scripts.matches.join('|')+')' ];
     }
 
